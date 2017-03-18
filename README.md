@@ -52,3 +52,41 @@ returns
       },
       "busPassType": "AdultBusPass"
     }
+
+### Execute via Swagger API
+
+Go to the Swagger API Page: [http://localhost:8080/swagger-ui.html#!/bus-pass-controller/getQuestionsUsingGET](http://localhost:8080/swagger-ui.html#!/bus-pass-controller/getQuestionsUsingGET)
+
+Enter the following details and click the `Try it out!` button
+
+| Parameter | Value   |
+|-----------|---------|
+| `name`    | `Steve` |
+| `age`     | `15`    |
+
+returns
+
+    {
+      "person": {
+        "name": "Steve",
+        "age": 15
+      },
+      "busPassType": "ChildBusPass"
+    }
+
+Enter the following details and click the `Try it out!` button
+
+| Parameter | Value   |
+|-----------|---------|
+| `name`    | `Steve` |
+| `age`     | `16`    |
+
+returns
+
+    {
+      "person": {
+        "name": "Steve",
+        "age": 16
+      },
+      "busPassType": "AdultBusPass"
+    }
